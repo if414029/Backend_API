@@ -7,7 +7,7 @@ const { Tax, TaxCode, sequelize } = models
 module.exports = {
     get: async (taxObj) => {
         try {
-
+            return { code: 200, data: "Success"}
         } catch(e) {
             return { code:500, data: e.message }
         }

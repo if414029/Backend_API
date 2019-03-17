@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         code: DataTypes.INTEGER,
         type: DataTypes.STRING,
-        refunable: DataTypes.STRING,
+        refundable: DataTypes.STRING,
     })
 
     TaxCode.associate = (models) => {

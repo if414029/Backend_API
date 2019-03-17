@@ -3,7 +3,8 @@ const tax = require('./tax.js')
 const response = require('../../lib/response')
 const router = express.Router()
 
-router.get('/', async (req, res) => {
+router.get('/:id', async (req, res) => {
+    req.body.taxDetailId = req.params.id
     const result = await tax.get(req.body)
     return response(res, result.code, result.data)
 })

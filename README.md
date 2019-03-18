@@ -2,7 +2,7 @@
 API Backend
 # Get Started 
 - clone repository
-- run docker-compose up
+- run docker-compose up / docker-compose up --build
 
 # To test API
 - open this link API documentation https://documenter.getpostman.com/view/2342531/S17nVr4t

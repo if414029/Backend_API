@@ -79,9 +79,16 @@ module.exports = {
             let priceTotal = 0
             let taxTotal = 0
             let grandTotal = 0
+
             for(val of tax) {
-                if(!val.name && val.taxCode && val.price){
-                    return { code:400, data: "Fields cannot be empty" }
+                if(!val.name){
+                    return { code:400, data: "Name cannot be empty" }
+                }
+                if(!val.taxCode){
+                    return { code:400, data: "Tax Code cannot be empty" }
+                }
+                if(!val.price){
+                    return { code:400, data: "Price cannot be empty" }
                 } 
                 const taxCode = await TaxCode.findOne({
                     where: {

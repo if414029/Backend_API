@@ -3,7 +3,7 @@ module.exports = {
       username: 'root',
       password: '',
       database: 'test',
-      host: '127.0.0.1',
+      host: 'db',
       dialect: 'mysql',
       pool: {
         idle: 10000,

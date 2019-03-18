@@ -11,3 +11,7 @@ API Backend
 - in result have TaxDetailId, copy that
 - then execute API GET by give params the id of TaxDetailId
 - and you will get the result
+
+# To Run Unit Test
+- run docker-compose exec [name container] npm run test
+- to get name container: docker ps
